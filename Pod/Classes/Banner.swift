@@ -348,7 +348,7 @@ open class Banner: UIView {
     }
     
     /// Shows the banner For Objective-C
-    open func show(duration: TimeInterval) {
+    open func showBanner(duration: TimeInterval) {
         show(duration: duration)
     }
   
@@ -368,7 +368,7 @@ open class Banner: UIView {
     }
     
     /// Dismisses the banner For Objective-C
-    open func dismiss(_ oldStatusBarStyle: UIStatusBarStyle) {
+    open func dismissBanner(_ oldStatusBarStyle: UIStatusBarStyle) {
         dismiss()
     }
 }
