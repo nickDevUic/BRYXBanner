@@ -346,6 +346,11 @@ open class Banner: UIView {
                 }
         })
     }
+    
+    /// Shows the banner For Objective-C
+    open func show(duration: TimeInterval) {
+        show(duration: duration)
+    }
   
     /// Dismisses the banner.
     open func dismiss(_ oldStatusBarStyle: UIStatusBarStyle? = nil) {
@@ -360,6 +365,11 @@ open class Banner: UIView {
                 self.removeFromSuperview()
                 self.didDismissBlock?()
         })
+    }
+    
+    /// Dismisses the banner For Objective-C
+    open func dismiss(_ oldStatusBarStyle: UIStatusBarStyle) {
+        dismiss()
     }
 }
 
